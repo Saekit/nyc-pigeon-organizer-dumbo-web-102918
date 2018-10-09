@@ -21,7 +21,16 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
-
+  data[:gender].each do |gender, type|
+    type.each do |bird_name|
+      names.each do |key|
+        if bird_name == key 
+          new_hash[key][:gender] << gender.to_s
+        end
+      end
+    end
+  end
+  
 
 
 
