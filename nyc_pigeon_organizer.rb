@@ -7,4 +7,5 @@ def nyc_pigeon_organizer(data)
         :gender => [],
         :lives => []
       }
+  new_hash
 end
